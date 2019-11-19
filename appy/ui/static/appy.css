@@ -1,0 +1,265 @@
+html { height: 100% }
+body { font: |fontSize| |fonts|; height: 100%; margin: 0 }
+pre { font: 100% |fonts|; margin: 0 }
+h1 { font-size: 14pt; letter-spacing: 2px; font-weight: normal }
+h2 { font-size: 13pt; margin:6px 0 6px 0; font-style: italic;
+     font-weight: normal }
+h3 { font-size: 12pt; margin:4px 0 4px 0; font-weight: bold }
+h4 { font-size: 11pt; margin:4px 0 4px 0 }
+h5 { font-size: 9pt; margin:0; font-style: italic; font-weight: normal;
+     background-color: #d7dee4 }
+h6 { font-size: 9pt; margin:0; font-weight: bold }
+a { text-decoration: none; color: #114353 }
+a:visited { color: #1f549a }
+.unclickable { pointer-events: none; color: grey !important }
+table { font-size: 100%; border-collapse: collapse }
+form { margin: 0; padding: 0 }
+p { margin: 0 0 5px 0 }
+abbr { cursor: help; text-decoration: none }
+acronym { cursor: help }
+input { font: 100% |fonts| }
+input[type=image] { border: 0; background: none; cursor: pointer }
+input[type=checkbox] { border: 0; background: none; cursor: pointer }
+input[type=radio] { border: 0; background: none; cursor: pointer }
+input[type=file] { border: 0px solid #d0d0d0; cursor: pointer }
+input[type=button] { border: 1px solid #d0d0d0; margin: 0 3px;
+  background-color: #f8f8f8; cursor: pointer }
+input[type=submit] { border: 1px solid #d0d0d0; background-color: #f8f8f8;
+  cursor: pointer }
+input[type=text], input[type=password] {
+  outline: none; cursor: text; border: none; border-bottom: 1px solid #afb8d4;
+  padding: 1px 2px; margin: 0 2px 1px 0; line-height: 1.4em;
+  font-family: |fonts|; background-color: transparent }
+select { border: none; border-bottom: 1px solid #afb8d4; outline: none;
+         background-color: transparent; overflow-y: auto;
+         font-family: |fonts|; font-size: 110%; padding: 3px }
+textarea { width: 99%; font: 100% |fonts|; border: 1px solid #d0d0d0;
+           background-color: white }
+label { color: #555555; margin: 3px 0; text-transform: uppercase;
+        font-size: 110% }
+.subLabel { text-transform: none; padding-left: 5px; font-size: 105% }
+th { font-weight: normal; font-style: italic }
+legend { padding-bottom: 2px; padding-right: 3px; color: black }
+ul { line-height: 1.2em; margin: 0 0 0.2em 0.6em;  padding: 0;
+     list-style: none outside none }
+ul li { margin: 0; background-image: url("/static/appy/li.gif");
+  padding-left: 10px; background-repeat: no-repeat; background-position: 0 4px }
+img { border: 0; vertical-align: middle }
+audio { margin: 2px 0 }
+
+.main { width: 100%; height: 100%; border: 0; display: table;
+        background-image: linear-gradient(#a9cce2 0px, #f7f8fb 200px) }
+.payload { width: 100%; height: 88%; position: relative }
+.row { display: table-row }
+.top { height: 89px; background-color: white }
+.headerMessages { position: absolute; top: 30px; left: 15px; color: #1f549a;
+                  font-weight: bold; font-size: 110%; z-index: 1 }
+.headerMessages img { vertical-align: bottom; padding-right: 7px }
+.wrongBrowser { color: darkred; font-size: 70%; line-height: 1.1em }
+.headerLogo { position: absolute; top: -2em; width: 1px; height: 1px;
+  left: 0; margin-left: auto; right: 0; margin-right: auto }
+.headerLogo img { position: relative; top: 45px; right: 28px }
+.headerLinks { padding-top: 25px }
+.headerLinks > a, .headerLinks > select { margin-right: 1em }
+.headerText { text-transform: uppercase; letter-spacing: 1px;
+              font-size: 110%; padding-left: 7px }
+.lang { margin-right: 6px }
+.changePassword { color: #494949 !important; font-style:italic; font-size: 90% }
+input.button { color: #666666; height: 25px; cursor: pointer;
+  font-size: 90%; padding: 0 12px 0 26px; background-color: white;
+  background-repeat: no-repeat; background-position: 8px 40%;
+  box-shadow: 2px 2px 2px #888888 }
+div.button { font-size: 90%; padding: 3px 5px 3px 17px; background-color: white;
+  background-repeat: no-repeat; box-shadow: 2px 2px 2px #888888;
+  border: 1px solid #d0d0d0; margin-right: 5px }
+input.buttonSmall { font-size: 85% }
+input.buttonIcon { vertical-align: bottom; margin: 0; border: 0;
+  background-color: transparent; background-position: 0 50%;
+  padding: 0 0 0 16px; box-shadow: none}
+input.buttonFixed { width: 110px; padding: 0 0 0 10px }
+.fake { background-color: #e6e6e6 !important ; cursor:help !important }
+.xhtml { background-color: transparent; padding: 4px; font-size: 95% }
+.xhtml img { margin-right: 5px }
+.xhtml p { margin: 3px 0 7px 0 }
+.xhtml table td, .xhtml table th { border: 1px solid grey; padding: 3px }
+.xhtml table th { background-color: #f0f0f0 }
+.clickable { cursor: pointer !important }
+.unclickable { pointer-events: none; cursor: default }
+.editable { cursor: crosshair !important }
+.help { cursor: help }
+.refLink { font-style: italic; padding-left: 5px; font-size: 90%;
+           color: #555555 }
+.refBar { margin-bottom: 4px }
+.buttons { margin-left: 4px }
+.objectButtons { margin-top: 5px }
+.rel { position: relative }
+.message { position: fixed; top: 115px; left: 50%; font-size: 105%;
+  width: 600px; border: 2px solid #33455f; padding: 6px;
+  background-color: #8399b7; text-align: center; margin-left: -300px;
+  color: white; z-index: 10; max-height: 50vh; overflow:auto;
+  font-weight: bold }
+.messagePopup { width: 80%; top: 0; left: 0; margin-left: 10px }
+.focus { margin: 7px 0; padding: 7px; background-color: #dce1f0;
+         border-radius: 2px 2px 2px 2px; box-shadow: 0 2px 4px #A9A9A9;
+         font-weight: bold }
+.focus td { padding: 4px 0px 4px 4px }
+.discreet { font-size: 90%; color: #555555 }
+.discreet table td, .discreet table th { border: 1px solid grey; padding: 3px }
+.title {}
+.subTitle { font-size: 90%; color: #555555 }
+.subTitle table { border-collapse: collapse }
+.subTitle table td, .subTitle table th { border: 1px solid grey; padding: 3px;
+  position: initial }
+.current { font-weight: bold }
+.sidebar { margin: 0 0 30px 2px }
+.inputSearch { height: 15px; width: 90px; margin: 3px 6px 2px 3px !important }
+td.search { padding-top: 8px }
+.searchFields { width: 100%; margin-bottom: 8px }
+.content { padding: 30px; display: table-cell; vertical-align: top; width: 100%}
+.popup { display: none;  background: white; padding: 18px;
+         border: 1px solid grey; box-shadow: 2px 2px 2px #888888;
+         position: absolute; top: 50%; left: 50%; z-index : 100;
+         transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%) }
+.dropdown { display:none; position: absolute; top: 12px; left: 1px;
+            border: 1px solid #cccccc; background-color: white;
+            padding: 3px 4px 3px; font-size: 8pt; font-weight: normal;
+            text-align: left; z-index: 2; line-height: normal }
+.dropdownMenu { cursor: pointer; font-size: 93%; position: relative }
+.dropdown a:hover { text-decoration: underline }
+.addForm { display: inline }
+.addFormMenu { display: inline; padding: 0 5px 0 3px }
+.inline { display: inline }
+.list { margin-bottom: 3px; border-collapse: separate; border-spacing: 7px }
+.list td, .list th { color: #555555; padding: 10px }
+.list th { font-weight: bold; font-size: 95%;
+           position: sticky; position: -webkit-sticky; top:-2px;
+           background-color: rgba(222,222,230,0.9) }
+.list a { font-weight: bold }
+.compact { font-size: 95%; width: 100% }
+.compact th, .compact td { padding: 4px }
+.compact tr { vertical-align: middle }
+.grid { border-collapse: separate; border-spacing: 3px }
+.grid th { font-size: 90%; padding: 3px 5px 0 5px; text-align: left;
+           background-color: #e4e8f9;
+           position: sticky; position: -webkit-sticky; top: -2px }
+.grid td { padding: 3px }
+.grid th, .grid td { padding: 1px 4px }
+.small { text-align: left; margin: 5px 0 }
+.small th { background-color: #b2b2b3; border: 1px solid grey; padding: 1px 3px}
+.small td { border: 1px solid grey; padding: 1px 3px }
+.popup .grid th, .popup .grid td { border: 1px solid grey }
+.calTable { font-size: 95% }
+.calTable td { border: 5px solid white; color: #555555; padding: 10px }
+.calEvt { width: 100% }
+.calEvt td { border: 0; padding: 0 3px 0 1px; margin: 0 }
+.calMany { background-color: #c1c5c7 }
+
+#summary { margin: 8px }
+#summaryCell { height: 15px; padding: 8px; border-bottom: 3px solid white }
+.timeline { font-size: 85%; color: #555555 }
+.timeline tr { height: 18px }
+.timeline th { background-color: white; text-align: center; padding: 0 1px }
+.timeline td { text-align: center; padding: 0 1px; border: 4px solid #f7f7f7 }
+.tlLeft { text-align: left !important; padding-left: 1px !important }
+.tlRight { text-align: right !important; padding-right: 1px !important }
+.msgTable { margin: 6px 0; width: 100%; font-size: 93% }
+.msgTable tr { vertical-align: top }
+.msgTable td, .msgTable th { border: 1px solid grey; color: #555555;
+                             padding: 0px 5px; text-align: left }
+.msgTable th { background-color: #f0e3b8; font-style: italic;
+               font-weight: normal }
+.cellGap { padding-right: 0.4em }
+.cellWE { color: #797979; font-style: italic;
+          background-color: #f2f2ff !important }
+.no td, .no th {
+  border: 0 !important; padding: 0 !important; margin: 0 !important;
+  background-color: transparent !important; font-size: 95% }
+.no a { font-weight: normal }
+.hidden { visibility: hidden }
+.simpleLabel { text-transform: none; padding-right: 3px }
+.translationLabel { background-color: #EAEAEA; border-bottom: 1px dashed grey;
+                    margin-top: 0.5em; margin-bottom: 0.5em }
+.section1 { font-size: 120%; margin: 0.45em 0em 0.1em 0;
+            padding: 0.3em 0em 0.2em 0.1em; background-color: #eef3f5;
+            border-top: 1px solid #8CACBB;border-bottom: 1px solid #8cacbb }
+.section2 { font-size: 14px; padding: 6px; text-transform: uppercase;
+            border-bottom: 1px dashed #cccccc; border-top: 1px dashed #cccccc;
+            background-color: #f9f9f9 }
+.section3 { font-size: 100%; font-weight: bold; text-transform: uppercase;
+            padding: 2px 0px; background-color: #8399b7; text-align: center;
+            color: white; padding: 5px }
+.even { background-color: #f3f3f7 }
+.odd { background-color: white }
+.refMenuItem { border-top: grey 1px dashed; margin-top: 3px; padding-top: 3px }
+.header { margin-bottom: 5px; background-color: whitesmoke;
+          border: 3px solid white }
+.by { padding: 7px }
+.underline { border-bottom: 1px dotted grey }
+.state { font-weight: bold; border-bottom: 1px dashed grey }
+.historyLabel { font-variant: small-caps; font-weight: bold }
+.history td { border-top: 3px solid white; padding: 0 5px }
+.history th { font-style: italic; text-align: left; padding: 0 5px;
+              background-color: white }
+.changes { margin: 4px 0 }
+.changes td, .changes th { border: 1px solid #e0e0e0 }
+.topSpace { margin-top: 15px }
+.topSpaceS { margin-top: 5px }
+.bottomSpace { margin-bottom: 15px }
+.paraSpace { margin: 3px 0 }
+.phase { background-color: #fbfbfb; border: 1px solid #d0d0d0;
+         box-shadow: 2px 2px 2px #888888; margin-bottom: 7px }
+.phase td { padding: 4px 10px; border-right: 1px solid #d0d0d0; font-size: 96% }
+.currentPage { background-color: #e6e6e6 }
+.code { font-family: "Lucida Console","Courier New" }
+.codePara { background-color: #EEFFCC; border-color: grey;
+            border-style: solid none; border-width: 1px medium;
+            color: #333333; line-height: 120%;
+            padding: 10px; margin: 10px 0 10px 0 }
+.homeTable { background-color: #E3E3E3; border-top: 1px solid grey }
+.homeTable td { padding: 10px 5px 10px 10px }
+.homeTable th { padding-top: 5px; font-size: 105% }
+.first { margin-top: 0px }
+.error { margin: 5px }
+.smaller, .smaller select { font-size: 95% }
+.pod { padding: 0 15px 0 5px }
+.podLast { padding-left: 5px }
+.podTable { line-height: 20px }
+.hide { display: none }
+.tabs { position:relative; bottom:-2px }
+.tab { padding: 0 10px 0 10px; text-align: center; font-size: 90%;
+       font-weight: bold}
+.language {color: #555555; font-size: 7pt; border: grey 1px solid; padding: 2px;
+           margin: 0 2px 0 4px; font-family: monospace }
+.highlight { background-color: yellow }
+.highlightRow { font-weight: bold; background-color: yellow; opacity: 0.6 }
+.globalActions { margin-bottom: 4px }
+.objectActions { margin: 7px 4px }
+.smallbox { margin: 0; vertical-align: middle }
+@keyframes blinkingBg {
+  0% { background-color: white; color: grey }
+  50% { background-color: grey; color: white }
+  100% { background-color: white; color: grey }
+}
+@-webkit-keyframes blinkingBg {
+  0% { background-color: white; color: grey }
+  50% { background-color: grey; color: white }
+  100% { background-color: white; color: grey }
+}
+.blinkBg {
+  -webkit-animation: blinkingBg 1s infinite;
+  animation: blinkingBg 1s infinite;
+}
+.legend { font-size: 90%; color: grey }
+.legendRight { float: right; margin-left: 10px }
+.legend td { padding: 1px 0px; border: 0 !important }
+/* Bugfix for the calendar class from jscalendar */
+.calendar { z-index: 10 }
+/* Classes for gridder's thumbnails */
+.thumbnail { font-size: 105%;  background-color: white; padding: 10px;
+             border-radius: 15px; min-height: 300px; max-height: 350px;
+             overflow: hidden; position: relative }
+.thumbmore { position: absolute; bottom: 0; left: 0; width: 100%;
+             text-align: right; margin: 0; padding: 50px 0 25px 0;
+             background-image: linear-gradient(to bottom, transparent, white) }
+.thumbmore img { padding-right: 30px }
+.thumbtable td { padding: 0 5px 3px 5px }

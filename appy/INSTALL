@@ -1,0 +1,19 @@
+All examples below are for Ubuntu.
+
+#- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# Prerequisites
+#- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Python 3.6
+**********
+Appy 1.x requires Python 3.6 or higher.
+
+ZODB
+****
+ZODB, the Zope Object DataBase, must be installed via "pip".
+
+To install pip:
+sudo apt install python3-pip
+
+To install zodb + additional stuff:
+pip3 install zodb DateTime
