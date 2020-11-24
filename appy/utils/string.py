@@ -1,7 +1,7 @@
 '''Utility module related to string manipulation'''
 
 # ------------------------------------------------------------------------------
-import re, cgi, unicodedata
+import re, html, unicodedata
 
 # ------------------------------------------------------------------------------
 charsIgnore = '.,:;*+=~?%^\'’"<>{}[]|\t\\°-'
@@ -62,7 +62,7 @@ def formatText(text, format='html'):
     '''Produces a representation of p_text into the desired p_format, which
        is "html" by default.'''
     if 'html' in format:
-        if format == 'html_from_text': text = cgi.escape(text)
+        if format == 'html_from_text': text = html.escape(text)
         r = text.replace('\r\n', '<br/>').replace('\n', '<br/>')
     elif format == 'text':
         r = text.replace('<br/>', '\n')

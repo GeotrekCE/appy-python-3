@@ -1,6 +1,6 @@
 # ~license~
 # ------------------------------------------------------------------------------
-import cgi
+import html
 
 # ------------------------------------------------------------------------------
 class OdtTable:
@@ -50,14 +50,14 @@ class OdtTable:
                         (self.tns, self.tns, cellStyle, self.tns, span)
             self.res += '<%sp %sstyle-name="%s">%s</%sp>' % \
                         (self.txns, self.txns, paraStyle,
-                         cgi.escape(str(content)), self.txns)
+                         html.escape(str(content)), self.txns)
             self.res += '</%stable-cell>' % self.tns
         else:
             tag = header and 'th' or 'td'
             palign = ''
             if align: palign = ' align="%s"' % align
             self.res += '<%s colspan="%d"%s>%s</%s>' % \
-                        (tag, span, palign, cgi.escape(str(content)), tag)
+                        (tag, span, palign, html.escape(str(content)), tag)
 
     def startRow(self):
         if not self.html:

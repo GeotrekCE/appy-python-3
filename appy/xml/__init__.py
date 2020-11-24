@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # ~license~
 # ------------------------------------------------------------------------------
-import xml.sax, difflib, types, cgi, datetime, io, os.path, re
+import xml.sax, difflib, types, datetime, io, os.path, re
 from xml.parsers.expat import XML_PARAM_ENTITY_PARSING_NEVER
 from xml.sax.handler import ContentHandler, ErrorHandler, feature_external_ges
 from xml.sax.xmlreader import InputSource
@@ -1196,7 +1196,7 @@ class XhtmlCleaner(XmlParser):
         else:
             toAdd = content
         # Re-transform XML special chars to entities.
-        self.env.currentContent += cgi.escape(toAdd)
+        self.env.currentContent += html.escape(toAdd)
 
 # ------------------------------------------------------------------------------
 class XhtmlToText(XmlParser):
