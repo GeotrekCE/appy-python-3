@@ -10,7 +10,7 @@ def find_packages():
     return r
 
 setup(name="appy-python-3",
-      version="2019.11.19",
+      version="2020.11.24",
       description="The Appy framework (Python 3)",
       long_description="Unofficial pypi release of offical code from https://forge.pallavi.be/projects/appy-python-3.",
       author="Gaetan Delannay",
